@@ -1,0 +1,82 @@
+<!--------w-----------
+
+    Project 4
+    Name: Angelo Nadres	
+    Date: 2023-04-23
+    Description: The HTML markup base for the website
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device=width">
+        <title>Angelo's Website</title>
+        <link rel="stylesheet" type="text/css" href="Project 4.css" />
+        <script src="Project 4.js"></script>
+    </head>
+    <body>
+		<div id="MainPage">
+			<main>
+				<header>
+					<h1>
+						Contact Information
+                    </h1>
+				</header>
+					<ul id="navigations">
+						<li>
+							<a href="./index.html">Home</a>
+						</li>
+						<li>
+							<a href="./services.html">Products & Services</a>
+						</li>
+						<li>
+							<a href="./contact.html">Contact</a>
+						</li>
+					</ul>
+                    <div id="wrapper">
+                        <form method="post" 
+                              id="survey_form" 
+                              action="#">
+                            <fieldset>
+                                <legend>Contact Information</legend>
+                            <fieldset>
+                                <hr />
+                            </fieldset>    
+                                <div class="formfield">
+                                    <label for="name" class="contact">Name:</label>
+                                    <input type="text" id="name" name="name"  maxlength="15" value="" autofocus="autofocus" />					
+                                    <div class="contact_error error" id="name_error">* Please enter your Name.</div>
+                                </div>
+                                <div class="formfield">
+                                    <label for="phonenumber" class="contact">Phone Number:</label>
+                                    <input type="text" id = "phonenumber" name="phonenumber" maxlength="10" />
+                                    <div class="contact_error error" id="phonenumber_error">* Please enter your phone number.</div>
+                                    <div class="contact_error error" id="phonenumberformat_error">* Please enter a valid phone number.</div>
+                                </div>
+                                <div class="formfield">
+                                    <label for="email" class="contact">Email:</label>
+                                    <input type="text" id="email" name="email"  />
+                                    <div class="contact_error error" id="email_error">* Please enter an email address.</div>
+                                    <div class="contact_error error" id="emailformat_error">* Please enter a valid email address.</div>
+                                </div>
+                            </fieldset>
+                             <fieldset>
+                                <legend>Comments Section</legend>
+                                <hr />
+                                <label for="feedback">Questions to Ask</label><br />
+                                <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="Type Here!"></textarea>
+                            </fieldset>                                 
+                            <fieldset>
+                                <hr />
+                                <button type="reset" >Reset</button>
+                                <button type="submit" >Submit</button>
+                            </fieldset>
+                       </form>
+                   </div> 
+                   <footer>
+                    <p id="rights">
+                        AboutMe© Angelo's Website 2023. All rights reserved.
+                    </p>
+                </footer>   
+    </body>
